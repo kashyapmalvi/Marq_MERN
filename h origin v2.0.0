@@ -1,0 +1,271 @@
+[33mtag v2.0.0[m
+Tagger: kashyap malvi <kashyapmalvi123@gmail.com>
+Date:   Tue Jul 7 09:36:12 2026 +0530
+
+Version 2.0.0
+
+[33mcommit 1c52237356a41ced5280cf26f85142b5a651a890[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv2.0.0[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kashyap malvi <kashyapmalvi123@gmail.com>
+Date:   Tue Jul 7 09:30:02 2026 +0530
+
+    version 2
+
+[1mdiff --git a/style css/boxmodel.html b/style css/boxmodel.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..9185f8e[m
+[1m--- /dev/null[m
+[1m+++ b/style css/boxmodel.html[m	
+[36m@@ -0,0 +1,39 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Box Model Presentation</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m        <div class="header-box">[m
+[32m+[m[32m            <h1>Box Model</h1>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="info-box">[m
+[32m+[m[32m            <p>Every element on the page has its own box, which can be styled using CSS.</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <div class="info-box">[m
+[32m+[m[32m            <p>From the inside out:</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m
+[32m+[m[32m        <ul class="list-container">[m
+[32m+[m[32m            <li><span class="highlight">content</span></li>[m
+[32m+[m[32m            <li><span class="highlight">padding</span></li>[m
+[32m+[m[32m            <li><span class="highlight">border</span></li>[m
+[32m+[m[32m            <li><span class="highlight">margin</span></li>[m
+[32m+[m[32m        </ul>[m
+[32m+[m
+[32m+[m[32m        <h2 class="sub-heading">Background</h2>[m
+[32m+[m
+[32m+[m[32m        <div class="info-box">[m
+[32m+[m[32m            <p>Keep in mind that a <span class="bordered-word">background</span> will cover the content and the padding.</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/style css/css.html b/style css/css.html[m
+[1mdeleted file mode 100644[m
+[1mindex 851ce72..0000000[m
+[1m--- a/style css/css.html[m	
+[1m+++ /dev/null[m
+[36m@@ -1,116 +0,0 @@[m
+[31m-<!doctype html>[m
+[31m-<html lang="en">[m
+[31m-  <head>[m
+[31m-    <meta charset="UTF-8" />[m
+[31m-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />[m
+[31m-    <title>Introduction to CSS</title>[m
+[31m-[m
+[31m-    <link rel="stylesheet" href="style.css" />[m
+[31m-[m
+[31m-    <style>[m
+[31m-      #heading {[m
+[31m-        color: blueviolet;[m
+[31m-        background-color: antiquewhite;[m
+[31m-      }[m
+[31m-[m
+[31m-      .formatting {[m
+[31m-        background-color: antiquewhite;[m
+[31m-        font-family: cursive;[m
+[31m-        color: aqua;[m
+[31m-      }[m
+[31m-[m
+[31m-      ul li {[m
+[31m-        color: black;[m
+[31m-        background-color: azure;[m
+[31m-      }[m
+[31m-[m
+[31m-      section > p {[m
+[31m-        color: red;[m
+[31m-      }[m
+[31m-[m
+[31m-      div > p {[m
+[31m-        color: blue;[m
+[31m-      }[m
+[31m-[m
+[31m-      input[placeholder] {[m
+[31m-        background-color: blue;[m
+[31m-      }[m
+[31m-[m
+[31m-      input[type="password"][placeholder] {[m
+[31m-        background-color: red;[m
+[31m-      }[m
+[31m-[m
+[31m-      h2[class] {[m
+[31m-        color: rgb(247, 94, 12);[m
+[31m-      }[m
+[31m-      a:hover {[m
+[31m-        color: red;[m
+[31m-        text-decoration: none;[m
+[31m-        font-family: Arial, Helvetica, sans-serif;[m
+[31m-        font-weight: 900;[m
+[31m-      }[m
+[31m-    </style>[m
+[31m-  </head>[m
+[31m-[m
+[31m-  <body>[m
+[31m-    <h2 class="">Heading Level 2</h2>[m
+[31m-[m
+[31m-    <h3 style="color: purple">Types of CSS :</h3>[m
+[31m-[m
+[31m-    <p class="formatting">[m
+[31m-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis[m
+[31m-      cupiditate consequatur ut![m
+[31m-    </p>[m
+[31m-[m
+[31m-    <ul class="formatting">[m
+[31m-      <li>Inline CSS</li>[m
+[31m-[m
+[31m-      <li>Internal CSS</li>[m
+[31m-[m
+[31m-      <li>External CSS</li>[m
+[31m-    </ul>[m
+[31m-[m
+[31m-    <br />[m
+[31m-[m
+[31m-    <a href="#" id="link">Click here</a>[m
+[31m-[m
+[31m-    <hr />[m
+[31m-[m
+[31m-    <section>[m
+[31m-      <div>[m
+[31m-        <p>[m
+[31m-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, non[m
+[31m-          ad molestiae sit temporibus incidunt esse. Soluta iusto commodi natus[m
+[31m-          at.[m
+[31m-        </p>[m
+[31m-      </div>[m
+[31m-[m
+[31m-      <p>[m
+[31m-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit[m
+[31m-        perspiciatis quos assumenda![m
+[31m-      </p>[m
+[31m-[m
+[31m-      <div>[m
+[31m-        <p>[m
+[31m-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium[m
+[31m-          sint, mollitia dolorum a, assumenda blanditiis neque possimus nisi[m
+[31m-          officiis optio ipsum.[m
+[31m-        </p>[m
+[31m-      </div>[m
+[31m-    </section>[m
+[31m-[m
+[31m-    <hr />[m
+[31m-[m
+[31m-    <form action="">[m
+[31m-      <label for="name">Username:</label>[m
+[31m-      <input type="text" id="name" placeholder="Enter your name" />[m
+[31m-[m
+[31m-      <br /><br />[m
+[31m-[m
+[31m-      <label for="password">Password:</label>[m
+[31m-      <input type="password" id="password" placeholder="Password" />[m
+[31m-[m
+[31m-      <input type="submit" value="Submit" />[m
+[31m-    </form>[m
+[31m-  </body>[m
+[31m-</html>[m
+[1mdiff --git a/style css/style.css b/style css/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2e4093c[m
+[1m--- /dev/null[m
+[1m+++ b/style css/style.css[m	
+[36m@@ -0,0 +1,84 @@[m
+[32m+[m
+[32m+[m[32m* {[m
+[32m+[m[32m    box-sizing: border-box;[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    font-family: Arial, sans-serif;[m
+[32m+[m[32m    background-color: #ffffff;[m
+[32m+[m[32m    padding: 4px;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m
+[32m+[m[32m.container {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    max-width: 1000px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[41m [m
+[32m+[m[32m.header-box {[m
+[32m+[m[32m    background-color: #f27c6d;[m
+[32m+[m[32m    border: 3px solid #000000;[m
+[32m+[m[32m    padding: 25px 20px;[m
+[32m+[m[32m    margin-bottom: 20px;[m
+[32m+[m[32m}[m
+[32m+[m[32m.header-box h1 {[m
+[32m+[m[32m    font-size: 38px;[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m    color: #000000;[m
+[32m+[m[32m    }[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m    .info-box {[m
+[32m+[m[32m        background-color: #add8e6;[m[41m [m
+[32m+[m[32m        border: 10px solid #00008b;[m[41m [m
+[32m+[m[32m        padding: 18px 20px;[m
+[32m+[m[32m        margin-bottom: 18px;[m
+[32m+[m[32m        }[m
+[32m+[m[41m        [m
+[32m+[m[32m        .info-box p {[m
+[32m+[m[32m            font-size: 18px;[m
+[32m+[m[32m            color: #333333;[m
+[32m+[m[32m            }[m
+[32m+[m[41m            [m
+[32m+[m[32m            .list-container {[m
+[32m+[m[32m                list-style-position: inside;[m[41m [m
+[32m+[m[32m                margin-bottom: 30px;[m
+[32m+[m[32m                }[m
+[32m+[m[41m                [m
+[32m+[m[32m                .list-container li {[m
+[32m+[m[32m                    font-size: 18px;[m
+[32m+[m[32m                    color: #cc00cc;[m[41m [m
+[32m+[m[32m                    background-color: #ffff00;[m[41m [m
+[32m+[m[32m                    padding: 6px 15px;[m
+[32m+[m[32m                    margin-bottom: 6px;[m
+[32m+[m[32m                    text-align: left;[m[41m [m
+[32m+[m[32m                    }[m
+[32m+[m
+[32m+[m[41m                    [m
+[32m+[m[41m                    [m
+[32m+[m[32m                    .sub-heading {[m
+[32m+[m[32m                        font-size: 28px;[m
+[32m+[m[32m                        font-weight: bold;[m
+[32m+[m[32m                        color: #000000;[m
+[32m+[m[32m                        margin-top: 10px;[m
+[32m+[m[32m                        margin-bottom: 20px;[m
+[32m+[m[32m                        }[m
+[32m+[m[41m                        [m
+[32m+[m
+[32m+[m
+[32m+[m[32m.bordered-word {[m
+[32m+[m[32m    border: 3px solid #000000;[m
+[32m+[m[32m    background-color: #ffffff;[m
+[32m+[m[32m    padding: 8px 15px;[m
+[32m+[m[32m    margin: 0 5px;[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    font-size: 16px;[m
+[32m+[m[32m    color: #333333;[m
+[32m+[m[32m}[m[41m [m
+\ No newline at end of file[m
