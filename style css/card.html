@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 350px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        .banner {
+            background: #3b71ca;
+            width: 100%;
+            height: 125px;
+            position: relative;
+        }
+
+        .profile-img-container {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background: #ffffff;
+            padding: 4px; /* White border effect */
+            position: absolute;
+            bottom: -55px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #3b71ca; /* Inner blue ring */
+        }
+
+        .content {
+            margin-top: 65px;
+            text-align: center;
+            width: 100%;
+            padding: 0 24px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 4px;
+        }
+
+        .headline {
+            font-size: 14px;
+            color: #4f4f4f;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.2s ease;
+        }
+
+        .icon:hover {
+            opacity: 0.85;
+        }
+
+        .icon.facebook { background-color: #4267B2; }
+        .icon.twitter { background-color: #1DA1F2; }
+        .icon.instagram { background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .icon.youtube { background-color: #FF0000; }
+
+        .buttons-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            width: 100%;
+            margin-bottom: 24px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 12px 0;
+            border-radius: 50px;
+            border: none;
+            font-size: 15px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #ffffff;
+            background-color: #3b71ca;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #2a549e;
+        }
+
+        .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #e0e0e0;
+        }
+
+
+        .analytics {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            padding: 16px 0;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: #4f4f4f;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .stat-item i {
+            font-size: 15px;
+            color: #6c757d;
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 16px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="banner">
+            <div class="profile-img-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhy82EAiVWz6uGy40Gl4rgK8Ju7guV7hQFhFaR4OPnD4iUShqgOt4uNEo&s=10" alt="Profile Image">
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 class="name">CodingLab</h2>
+            <p class="headline">YouTuber & Blogger</p>
+
+            <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="buttons-row">
+                <button class="btn">Subscribe</button>
+                <button class="btn">Message</button>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="analytics">
+            <div class="stat-item">
+                <i class="far fa-heart"></i>
+                <span>60.4k</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <i class="far fa-comment"></i>
+                <span>20k</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <i class="fas fa-reply fa-flip-horizontal"></i>
+                <span>12.4k</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
