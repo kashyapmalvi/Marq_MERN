@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        .section-title {
+            text-align: center;
+            color: #0b3c95; 
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px 30px;
+        }
+
+
+        .service-item {
+            display: flex;
+            align-items: flex-start;
+        }
+
+    
+        .icon-box {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            margin-right: 20px;
+            flex-shrink: 0; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .service-item.highlighted .icon-box {
+            background-color: #f04343; 
+            color: #ffffff; 
+        }
+
+        .service-item.highlighted .service-title {
+            color: #f04343; 
+        }
+
+        .service-content {
+            padding-top: 5px;
+        }
+
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 8px 0;
+        }
+
+        .service-description {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    
+.service-item:hover .icon-box {
+    background-color: #f04343; 
+    color: #ffffff;           
+}
+
+.service-item:hover .service-title {
+    color: #f04343;            
+}
+
+.icon-box, .service-title {
+    transition: all 0.3s ease;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="section-title">Our Services</h1>
+
+        <div class="services-grid">
+            
+            <div class="service-item highlighted">
+                <div class="icon-box">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Manual Testing</h3>
+                    <p class="service-description">Comprehensive manual testing to ensure your software functions as intended.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-gears"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Automated Testing</h3>
+                    <p class="service-description">Efficient and reliable automated testing solutions to save time and resources.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-circle-nodes"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">API Testing</h3>
+                    <p class="service-description">We help you deliver seamless and high-quality digital experiences by thoroughly evaluating your APIs.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Mobile Testing</h3>
+                    <p class="service-description">QASSERT's mobile testing ensures seamless, reliable user experiences across devices.</p>
+                </div>
+            </div>
+
+         
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Security Testing</h3>
+                    <p class="service-description">Identifying vulnerabilities to protect your software from potential threats.</p>
+                </div>
+            </div>
+
+            <!-- 6. Usability Testing -->
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-clipboard-user"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Usability Testing</h3>
+                    <p class="service-description">Ensuring your software meets user requirements and expectations.</p>
+                </div>
+            </div>
+
+            <!-- 7. Performance Testing -->
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-stopwatch"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Performance Testing</h3>
+                    <p class="service-description">Evaluating software performance under different conditions to ensure stability and scalability.</p>
+                </div>
+            </div>
+
+            <!-- 8. Accessibility Testing -->
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-universal-access"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Accessibility Testing</h3>
+                    <p class="service-description">Making sure your software is accessible to all users, including those with disabilities. Case Studies/Success Stories</p>
+                </div>
+            </div>
+
+            <!-- 9. Visual Testing -->
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Visual Testing</h3>
+                    <p class="service-description">Verifying the visual correctness of your software across different interfaces.</p>
+                </div>
+            </div>
+
+            <!-- 10. Compatibility Testing -->
+            <div class="service-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+                <div class="service-content">
+                    <h3 class="service-title">Compatibility Testing</h3>
+                    <p class="service-description">Ensuring your software works seamlessly across various devices and platforms.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
