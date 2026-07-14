@@ -1,0 +1,228 @@
+
+
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f3f6;
+    color: #212121;
+}
+
+/* Header Container */
+.flipkart-header {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 10px 10% 0 10%;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* --- Row 1: Sub-brands & Location --- */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.sub-brands {
+    display: flex;
+    gap: 12px;
+}
+
+.brand-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo-main {
+    background-color: #ffe500;
+    color: #000000;
+}
+
+.gray-badge {
+    background-color: #f0f2f5;
+    color: #1f1f1f;
+}
+
+/* Icon Colors inside sub-brands */
+.text-blue { color: #2874f0; }
+.text-red { color: #ff4d4d; }
+.text-orange { color: #ff6b35; }
+.text-green { color: #388e3c; }
+
+.top-right-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.location-picker {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.location-picker .fa-location-dot {
+    color: #000000;
+}
+
+.location-picker .pincode {
+    font-weight: 700;
+}
+
+.location-picker .delivery-text {
+    color: #2874f0;
+    font-weight: 500;
+}
+
+.location-picker .chevron {
+    font-size: 10px;
+    color: #2874f0;
+}
+
+.supercoin-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background-color: #fff9e6;
+    border: 1px solid #ffe599;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.text-yellow {
+    color: #ffa500;
+}
+
+/* --- Row 2: Search & Profile Navigation --- */
+.middle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: #f0f5ff;
+    border: 1px solid #2874f0;
+    border-radius: 8px;
+    padding: 0 16px;
+    height: 40px;
+}
+
+.search-icon {
+    color: #717478;
+    margin-right: 12px;
+    font-size: 16px;
+}
+
+.search-container input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    color: #212121;
+}
+
+.search-container input::placeholder {
+    color: #717478;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    color: #1f1f1f;
+    cursor: pointer;
+    padding: 6px 4px;
+}
+
+.nav-item:hover {
+    color: #2874f0;
+}
+
+.nav-item .chevron {
+    font-size: 10px;
+    color: #717478;
+}
+
+/* --- Row 3: Categories Navbar --- */
+.categories-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8px;
+    overflow-x: auto;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding-bottom: 8px;
+    min-width: 60px;
+    text-align: center;
+}
+
+.category-icon-wrapper {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-bg {
+    background-color: #e6f0ff;
+    border-radius: 8px;
+}
+
+.yellow-icon {
+    color: #cca300; /* Subtle desaturated gold/yellow outline look */
+    font-size: 18px;
+}
+
+.category-item span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #212121;
+    white-space: nowrap;
+}
+
+/* Active Category Border (For You) */
+.category-item.active {
+    border-bottom: 3px solid #2874f0;
+}
+
+.category-item.active span {
+    font-weight: 700;
+}
