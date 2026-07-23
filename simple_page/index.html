@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+       
+        .dashboard-container {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            min-height: 550px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background: black;
+            padding: 30px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .sidebar-title {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 14px 20px;
+            color: #b3d4fc;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-item i {
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .menu-item.active {
+            background-color: #ffffff;
+            color: #000000;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            font-weight: 600;
+        }
+
+        .menu-item:not(.active):hover {
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .content-area {
+            width: 75%;
+            padding: 40px;
+            background-color: #ffffff;
+        }
+
+        .content-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+
+      
+
+       
+
+
+       
+       
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-title">Technologies</div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="#" class="menu-item active">
+                        <i class="fa-solid fa-desktop"></i>
+                        Frontend
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-server"></i>
+                        Backend
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Mobile
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        Platforms
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item">
+                        <i class="fa-solid fa-database"></i>
+                        Databases
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <div class="content-header">
+                <div class="header-icon">
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="header-title-container">
+                    <h1>Frontend</h1>
+                    <div class="header-underline"></div>
+                </div>
+            </div>
+
+            <div class="tech-grid">
+                
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="AngularJS">
+                    </div>
+                    <span>AngularJS</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS">
+                    </div>
+                    <span>ReactJS</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                    </div>
+                    <span>Vue.js</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <span>CSS3</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <span>HTML5</span>
+                </div>
+
+                <div class="tech-card">
+                    <div class="icon-wrapper">
+
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" style="filter: brightness(0);">
+                    </div>
+                    <span>Next.js</span>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
