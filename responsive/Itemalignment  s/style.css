@@ -63,3 +63,15 @@ body {
     background-color: #c7e5a8;
 }
 
+.card-inbox {
+    background-color: #fce38a;
+}
+
+.card-gifts {
+    background-color: #f8b179;
+    grid-column: span 2;
+}
+
+.card-reminders {
+    background-color: #bce0ed;
+}
